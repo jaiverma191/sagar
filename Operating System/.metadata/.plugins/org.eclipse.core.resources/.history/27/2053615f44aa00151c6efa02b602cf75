@@ -1,0 +1,19 @@
+package com.hiring.atm;
+
+import java.util.Scanner;
+
+public class ATM {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Bank bank = new Bank("Lucky");
+		User user = bank.addUser("jai", "Verma", "12345");
+		Account account = new Account("Checking", user, bank);
+		user.addAccount(account);
+		bank.addAccount(account);
+		User curUser;
+		while (true) {
+			curUser = ATM.mainMenuPrompt(bank,scanner);
+			ATM.printUserMenu(curUser,scanner);
+		}
+	}
+}

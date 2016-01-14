@@ -1,0 +1,101 @@
+package com.hiring.datastructure;
+
+import java.util.Queue;
+
+public class Tree {
+	private int data;
+    private Tree left;
+    private Tree right;
+     
+    public int getData() {
+        return data;
+    }
+ 
+    public void setData(int data) {
+        this.data = data;
+    }
+ 
+    public Tree getLeft() {
+        return left;
+    }
+ 
+    public void setLeft(Tree left) {
+        this.left = left;
+    }
+ 
+    public Tree getRight() {
+        return right;
+    }
+ 
+    public void setRight(Tree right) {
+        this.right = right;
+    }
+     
+    public Tree(int data){
+        this.data = data;
+    }
+ 
+    public void preOrderTraversal(Tree root){
+        if(root == null)
+            return;
+        System.out.print(root.getData()+" ");
+        preOrderTraversal(root.getLeft());
+        preOrderTraversal(root.getRight());
+         
+    }
+     
+    public void postOrderTraversal(Tree root){
+        if(root == null)
+            return;
+        postOrderTraversal(root.getLeft());
+        postOrderTraversal(root.getRight());
+        System.out.print(root.getData()+" ");
+    }
+     
+    public void inOrderTraversal(Tree root){
+        if(root == null)
+            return;
+        inOrderTraversal(root.getLeft());
+        System.out.print(root.getData()+" ");
+        inOrderTraversal(root.getRight());
+         
+    }
+     
+    public void leverOrderTraversal(Tree root){
+        if(root == null){
+            return;
+        }
+        Queue queue = Queue.createQueue();
+        queue.enQueue(root);
+        while(!queue.isEmpty()){
+            Tree temp = queue.deQueue();
+            System.out.print(temp.getData()+" ");
+            if(temp.getLeft() != null)
+                queue.enQueue(temp.getLeft());
+            if(temp.getRight() != null)
+                queue.enQueue(temp.getRight());
+        }
+    }
+     
+    public static void main(String[] args) {
+        Tree root = new Tree(1);
+        root.setLeft(new Tree(2));
+        root.setRight(new Tree(3));
+        root.getLeft().setLeft(new Tree(4));
+        root.getLeft().setRight(new Tree(5));
+        root.getRight().setLeft(new Tree(6));
+        root.getRight().setRight(new Tree(7));
+        System.out.print("Preorder: ");
+        root.preOrderTraversal(root);
+        System.out.println();
+        System.out.print("Postorder: ");
+        root.postOrderTraversal(root);
+        System.out.println();
+        System.out.print("Inorder: ");
+        root.inOrderTraversal(root);
+        System.out.println();
+        System.out.print("Levelorder: ");
+        root.leverOrderTraversal(root);
+         
+    }
+}

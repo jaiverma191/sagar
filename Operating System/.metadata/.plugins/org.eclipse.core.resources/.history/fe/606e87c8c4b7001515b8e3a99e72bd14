@@ -1,0 +1,7 @@
+package com.lucky.pattern.creatitional.builder;
+
+public interface IHillAreaAddress {
+	public Integer getGaliNo();
+
+	public Integer getHouseNo();
+}

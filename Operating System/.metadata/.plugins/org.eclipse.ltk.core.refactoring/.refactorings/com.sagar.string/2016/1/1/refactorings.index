@@ -1,0 +1,4 @@
+1451656343180	Extract local variable 'stringToLong'
+1451656453778	Extract local variable 'substring'
+1451656482899	Extract local variable 'parseInt'
+1451660632819	Delete element

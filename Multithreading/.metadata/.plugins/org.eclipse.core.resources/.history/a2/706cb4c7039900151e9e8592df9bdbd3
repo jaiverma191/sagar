@@ -1,0 +1,17 @@
+package com.hiring.custom.lock;
+
+public class DecThread implements Runnable{
+
+	final private Counter1 counter;
+	
+	public DecThread(Counter1 counter) {
+		this.counter=counter;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.hiring.tree;
+
+public class AdvancedTreeNode extends TreeNode {
+
+	public TreeNode nextRight;
+
+	public AdvancedTreeNode(int value) {
+		super(value);
+	}
+
+}

@@ -1,0 +1,51 @@
+package com.sagar.arrays;
+
+import java.util.Stack;
+
+public class Question12 {
+
+	public static void main(String[] args) {
+		int arr[][] = { { 1, 1, 0, 0, 1, 0 }, { 0, 1, 1, 1, 1, 1 }, { 1, 1, 1, 1, 1, 0 }, { 0, 0, 1, 1, 0, 0 } };
+		int m = 4, n = 6;
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+
+		for (int i = 1; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				if (arr[i][j] == 1) {
+					arr[i][j] = arr[i - 1][j] + 1;
+				}
+			}
+		}
+		int currentArea = 0;
+		int maxArea = 0;
+		int top;
+		for (int j = 0; j < m; j++) {
+			Stack<Integer> stack = new Stack<>();
+			int i = 0;
+			while (i < n) {
+				if (stack.isEmpty() || arr[j][stack.peek()] <= arr[j][i]) {
+					stack.push(i++);
+				} else {
+					top = stack.pop();
+					currentArea = arr[j][top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+					if (currentArea > maxArea)
+						maxArea = currentArea;
+				}
+			}
+			while (!stack.empty()) {
+				top = stack.pop();
+				currentArea = arr[j][top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+				if (currentArea > maxArea)
+					maxArea = currentArea;
+			}
+		}
+
+		System.out.println("Max = " + maxArea);
+
+	}
+}

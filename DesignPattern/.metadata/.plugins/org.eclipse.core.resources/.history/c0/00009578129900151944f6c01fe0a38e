@@ -1,0 +1,17 @@
+package com.hiring.thread.pool;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class ThreadPool {
+
+	private BlockingQueue taskQueue = null;
+	private isStoped = false;
+	private List<PoolThread> threads= new ArrayList<PoolThread>();
+	
+	public ThreadPool(int noOfThreads,int maxNoOfTasks) {
+		taskQueue= new ArrayBlockingQueue<>(maxNoOfTasks);
+	}
+}

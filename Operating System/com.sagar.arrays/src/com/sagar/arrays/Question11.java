@@ -1,0 +1,37 @@
+package com.sagar.arrays;
+
+import java.util.Stack;
+
+public class Question11 {
+
+	public static void main(String[] args) {
+		int[] arr = { 3, 2, 5, 6, 1, 6, 6 };
+		int maxArea = 0;
+		int currentArea = 0;
+		int top;
+		Stack<Integer> stack = new Stack<>();
+		int i = 0;
+		while (i < arr.length) {
+			if (stack.isEmpty() || arr[stack.peek()] <= arr[i]) {
+				stack.push(i++);
+			} else {
+				top = stack.pop();
+				currentArea = arr[top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+				if (currentArea > maxArea)
+					maxArea = currentArea;
+			}
+		}
+		while (!stack.empty()) {
+			top = stack.pop();
+			currentArea = arr[top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+			if (currentArea > maxArea)
+				maxArea = currentArea;
+		}
+		System.out.println(maxArea);
+	}
+}
+
+class StackItem {
+	public int value;
+	public int index;
+}

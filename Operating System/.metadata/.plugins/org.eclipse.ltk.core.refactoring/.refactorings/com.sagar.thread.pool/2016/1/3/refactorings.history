@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.hiring.thread.pool&apos; to &apos;com.sagar.thread.pool&apos;&#x0A;- Original project: &apos;com.sagar.thread.pool&apos;&#x0A;- Original element: &apos;com.sagar.thread.pool/src/com.hiring.thread.pool&apos;&#x0A;- Renamed element: &apos;com.sagar.thread.pool/src/com.sagar.thread.pool&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.hiring.thread.pool&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.hiring.thread.pool" name="com.sagar.thread.pool" qualified="false" references="true" stamp="1452533100034" textual="false" version="1.0"/>
+</session>

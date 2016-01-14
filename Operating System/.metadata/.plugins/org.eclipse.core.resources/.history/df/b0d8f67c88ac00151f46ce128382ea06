@@ -1,0 +1,8 @@
+package com.hiring.string;
+
+public class KMP {
+	public static void main(String[] args) {
+		CharSequence string1 = "abcbaba";
+		CharSequence string2 = "abc";
+	}
+}

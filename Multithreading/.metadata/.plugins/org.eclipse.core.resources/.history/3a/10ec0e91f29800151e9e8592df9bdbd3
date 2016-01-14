@@ -1,0 +1,17 @@
+package com.hiring.producer.consumer;
+
+import java.util.Queue;
+import java.util.Vector;
+
+public class ProducerConsumerDemo {
+
+	public static void main(String[] args) {
+		Vector sQueue= new Vector();
+		int size=4;
+		Thread producerThread = new Thread();
+		Thread consumerThread = new Thread();
+		producerThread.start();
+		consumerThread.start();
+		
+	}
+}

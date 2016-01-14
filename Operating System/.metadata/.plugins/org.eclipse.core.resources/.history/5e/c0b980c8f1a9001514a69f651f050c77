@@ -1,0 +1,21 @@
+package com.hiring.binary.tree;
+
+public class BinarySearchTree {
+	public static void main(String[] args) {
+
+		int arr[] = { 1, 5, 7, 3, 2, 4, 9, 1, 6 };
+		BinarySearchNode root = new BinarySearchNode(arr[1]);
+
+		for (int i = 1; i < arr.length; i++) {
+			addNodeToTree(root, arr[i]);
+		}
+	}
+
+	private static void addNodeToTree(BinarySearchNode root, int value) {
+		BinarySearchNode node = root;
+		while (true) {
+			if(node.left<)
+		}
+	}
+
+}

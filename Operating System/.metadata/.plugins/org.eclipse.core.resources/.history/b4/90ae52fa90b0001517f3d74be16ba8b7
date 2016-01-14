@@ -1,0 +1,52 @@
+package com.hiring.string;
+
+public class Test {
+
+	Node tail;
+	Node head;
+
+	public static void main(String[] args) {
+		add(1);
+	}
+
+	void add(int value) {
+		Node node = new Node(value);
+		if (head == null) {
+			head = node;
+			tail = node;
+			return;
+		}
+		tail.next = node;
+		node.prev = tail;
+		tail = node;
+
+	}
+
+	void remove(Node head, int value) {
+		if (head == null) {
+			System.out.println("Not Found");
+		} else if (value == head.d) {
+			if (head == tail) {
+				head = null;
+				tail = null;
+			} else {
+				head = head.next;
+				head.prev = null;
+			}
+		} else {
+			Node n;
+			n = new Node();
+			n = head.next;
+			while (n != null && value != n.d) {
+				n = n.next;
+			}
+			if (n == tail) {
+				tail = tail.prev;
+				tail.next = null;
+			} else if (n != null) {
+				n.prev.next = n.next;
+				n.next.prev = n.prev;
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+package com.hiring.atm;
+
+import java.util.Scanner;
+
+public class ATM {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Bank bank = new Bank("Lucky");
+		User user = bank.addUser("jai", "Verma", "12345");
+		Account account = new Account("Checking", user, bank);
+		user.addAccount(account);
+		bank.addAccount(account);
+		User curUser;
+		while (true) {
+			curUser = ATM.mainMenuPrompt(bank, scanner);
+			ATM.printUserMenu(curUser, scanner);
+		}
+	}
+
+	private static void printUserMenu(User curUser, Scanner scanner) {
+		curUser.printAccountSummary();
+		int choice;
+		do
+		{	System.out.printf("Welcome %s, What you would like to do?", curUser.getFirstName())
+			System.out.println(" 1)Show account transaction history");
+		System.out.println(" 2) Withdrawl");
+		System.out.println(" 3) Deposit");
+		System.out.println(" 4) Transfer");
+		System.out.println(" 5) Quit");
+		choice=scanner.nextInt();
+			if(choice<1||choice>5)
+				System.out.println("Invalid Choice.Please choose 1-5");
+		}while(choice<1||choice>5);
+	}
+
+	private static User mainMenuPrompt(Bank bank, Scanner scanner) {
+		String userUID;
+		String pin;
+		User curUser;
+		do {
+			System.out.printf("\n\nWelcome to Bank %s\n\n", bank.getName());
+			System.out.print("Enter User ID");
+			userUID = scanner.nextLine();
+			System.out.print("Enter Pin");
+			pin = scanner.nextLine();
+			curUser = bank.userLogin(userUID, pin);
+			if (curUser == null) {
+				System.out.println("Incorrect user Id/Pin");
+			}
+		} while (curUser == null);
+		return curUser;
+	}
+}

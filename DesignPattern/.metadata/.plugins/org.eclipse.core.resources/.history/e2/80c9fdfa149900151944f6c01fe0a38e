@@ -1,0 +1,16 @@
+package com.hiring.thread.pool;
+
+public class UseThreadPool {
+	public static void main(String[] args) {
+		Task1 task1= new Task1();
+		Task2 task2= new Task2();
+		Task3 task3= new Task3();
+		Task4 task4= new Task4();
+		int count =0;
+		ThreadPool  pool= new ThreadPool(2, 4);
+		while(count<50)
+		{
+			
+		}
+	}
+}

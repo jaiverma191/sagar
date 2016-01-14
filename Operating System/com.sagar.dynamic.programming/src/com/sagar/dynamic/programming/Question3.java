@@ -1,0 +1,38 @@
+package com.sagar.dynamic.programming;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		int[] coins = { 5, 2, 3, 6 };
+		int requiredSum = 0;
+		System.out.println("Possible Ways = " + getPossibleWays(coins, requiredSum));
+
+	}
+
+	private static int getPossibleWays(int[] coins, int requiredSum) {
+
+		int[][] table = new int[requiredSum + 1][coins.length];
+
+		for (int i = 0; i < coins.length; i++) {
+			table[0][i] = 1;
+		}
+		for (int i = 1; i <= requiredSum; i++) {
+			for (int j = 0; j < coins.length; j++) {
+				int x = 0;
+				int y = 0;
+				if (i >= coins[j]) {
+					x = table[i - coins[j]][j];
+				}
+				if (j > 0) {
+					y = table[i][j - 1];
+				}
+				table[i][j] = x + y;
+				System.out.print(table[i][j] + " ");
+			}
+			System.out.print("\n");
+		}
+
+		return table[requiredSum][coins.length - 1];
+	}
+
+}

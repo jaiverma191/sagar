@@ -1,0 +1,29 @@
+package com.hiring.string;
+
+public class KMP {
+	public static void main(String[] args) {
+		CharSequence string1 = "abcbaba";
+		CharSequence string2 = "abc";
+		if (containSubstring(string1, string2)) {
+
+		}
+	}
+
+	private static boolean containSubstring(CharSequence string1, CharSequence string2) {
+		int[] prefixTable = new int[string2.length()];
+		fillPrefixTable(prefixTable, string2);
+		return false;
+	}
+
+	private static void fillPrefixTable(int[] prefixTable, CharSequence string2) {
+		prefixTable[0] = 0;
+		int i = 1, j = 0;
+		while (i < string2.length()) {
+			if (string2.charAt(i) == string2.charAt(j)) {
+				prefixTable[i] = j;
+				i++;
+				j++;
+			}
+		}
+	}
+}

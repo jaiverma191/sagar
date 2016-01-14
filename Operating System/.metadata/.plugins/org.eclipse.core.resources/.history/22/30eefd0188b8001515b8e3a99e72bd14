@@ -1,0 +1,37 @@
+package com.hiring.postgres;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	public static void main(String[] args) {
+		Node node1 = new Node(1);
+		Node node2 = new Node(2);
+		Node node3 = new Node(3);
+		Node node4 = new Node(4);
+		Node node5 = new Node(5);
+		List<Node> listOfNode1 = new ArrayList<>();
+		listOfNode1.add(node2);
+		listOfNode1.add(node3);
+		node1.childNodes = listOfNode1;
+		List<Node> listOfNode2 = new ArrayList<>();
+		listOfNode2.add(node4);
+		listOfNode2.add(node5);
+		node2.childNodes = listOfNode2;
+		System.out.println(sumTree(node1));
+	}
+
+	public static int sumTree(Node root) {
+		int sum = 0;
+		if (root == null) {
+			return 0;
+		}
+		sum = sum + root.value;
+		if (root.childNodes != null) {
+			for (int i = 0; i < root.childNodes.size(); i++) {
+				sum = sum + sumTree(root.childNodes.get(i));
+			}
+		}
+		return sum;
+	}
+}

@@ -1,0 +1,11 @@
+package com.pank.vd;
+
+import java.util.List;
+
+public interface IDrink {
+	
+	public List<IIngredents> ingredents;
+	public Integer getPrice();
+	public void banao(); 
+
+}

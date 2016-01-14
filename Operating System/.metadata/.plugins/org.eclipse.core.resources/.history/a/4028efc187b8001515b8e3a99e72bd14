@@ -1,0 +1,16 @@
+package com.lucky.pattern.behavioral.command;
+
+public class WriteFileCommand implements ICommand {
+
+	private IFileSystemReceiver fileSystem;
+
+	public WriteFileCommand(IFileSystemReceiver fs) {
+		this.fileSystem = fs;
+	}
+
+	@Override
+	public void execute() {
+		this.fileSystem.writeFile();
+	}
+
+}

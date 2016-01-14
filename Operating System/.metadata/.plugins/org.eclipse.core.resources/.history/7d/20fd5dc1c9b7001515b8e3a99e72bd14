@@ -1,0 +1,6 @@
+package com.lucky.pattern.creatitional.builder;
+
+public interface ICityAreaAddress extends IStreetAddress {
+	
+
+}

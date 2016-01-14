@@ -1,0 +1,30 @@
+package com.hiring.atm;
+
+import java.util.Date;
+
+public class Transaction {
+
+	private double amount;
+
+	private Date transaction;
+
+	private String memo;
+
+	private Account account;
+
+	public Transaction(double ammount, Account account) {
+		this.amount = ammount;
+		this.account = account;
+		this.transaction = new Date();
+		this.memo = "";
+	}
+
+	public Transaction(double ammount, Account account, String memo) {
+		this(ammount, account);
+		this.memo = memo;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+}

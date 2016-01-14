@@ -1,0 +1,17 @@
+INDEX VERSION 1.127+/home/lucky/Documents/practice/Operating System/.metadata/.plugins/org.eclipse.jdt.core
+3415660018.index
+2976424090.index
+1091566276.index
+3924737457.index
+3859701924.index
+3617633462.index
+684762160.index
+3210636202.index
+1746620634.index
+2725155480.index
+3317872161.index
+2290184008.index
+1001665390.index
+314096859.index
+3548694704.index
+1635579897.index

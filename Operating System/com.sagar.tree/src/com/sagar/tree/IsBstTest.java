@@ -1,0 +1,32 @@
+package com.sagar.tree;
+
+public class IsBstTest {
+	private static TreeNode prevNode;
+
+	public static void main(String[] args) {
+		TreeNode root = new TreeNode(4);
+		root.left = new TreeNode(2);
+		root.right = new TreeNode(5);
+		root.right.left = new TreeNode(6);
+		root.right.right = new TreeNode(7);
+
+		if (isBst(root))
+			System.out.println("Is BST");
+		else
+			System.out.println("Not a BST");
+	}
+
+	public static Boolean isBst(TreeNode root) {
+		if (root != null) {
+			if (!isBst(root.left)) {
+				return false;
+			}
+			if (prevNode != null && root.value <= prevNode.value) {
+				return false;
+			}
+			prevNode = root;
+			return isBst(root.right);
+		}
+		return true;
+	}
+}

@@ -1,0 +1,9 @@
+package com.lucky.pattern.behavioral.command;
+
+public interface IFileSystemReceiver {
+	void openFile();
+
+	void writeFile();
+
+	void closeFile();
+}

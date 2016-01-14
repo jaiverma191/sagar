@@ -1,0 +1,16 @@
+package com.hiring.custom.lock;
+
+public class MyLock {
+	
+	private Boolean isLocked=false;
+	
+	
+	public synchronized void lock()
+	{
+		while(isLocked)
+		{
+			
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.hiring.dynamic.programming;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.lang.reflect.Method;
+import java.util.HashSet;
+import static java.lang.System.in;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(in));
+		Method[] declaredMethods = Prime.class.getDeclaredMethods();
+		HashSet<String> set = new HashSet<>();
+		for (int i = 0; i < declaredMethods.length; i++) {
+			String name = declaredMethods[i].getName();
+			if (set.contains(name)) {
+				System.err.println("wrong");
+			}
+			set.add(name);
+		}
+		
+	}
+
+	static class Inner {
+
+		private class Private {
+			private String power(int number) {
+				return "jai";
+			}
+
+		}
+	}
+}

@@ -1,0 +1,19 @@
+package com.hiring.thread.pool;
+
+import java.util.concurrent.BlockingQueue;
+
+public class PoolThread extends Thread{
+
+	private  BlockingQueue<Runnable> taskQueue=null;
+	private Boolean isStoped= false;
+	
+	public PoolThread(BlockingQueue<Runnable> taskQueue) {
+		this.taskQueue=taskQueue;
+	}
+
+	public void stopThread() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

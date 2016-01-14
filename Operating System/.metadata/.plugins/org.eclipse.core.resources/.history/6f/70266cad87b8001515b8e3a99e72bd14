@@ -1,0 +1,35 @@
+package com.hiring.dynamic.programming;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+
+		int coins[] = { 25, 10, 5 };
+		System.out.println(findMinimun(coins, 30));
+	}
+
+	private static int findMinimun(int[] coins, int v) {
+
+		int[] table = new int[v + 1];
+		table[0] = 0;
+
+		for (int i = 1; i < table.length; i++) {
+			table[i] = Integer.MAX_VALUE;
+		}
+
+		for (int i = 1; i <= v; i++) {
+			for (int j = 0; j < coins.length; j++) {
+				if (coins[j] <= i) {
+					int temp = table[i - coins[j]];
+					if (temp != Integer.MAX_VALUE && temp + 1 < table[i]) {
+						table[i] = temp + 1;
+					}
+				}
+			}
+		}
+
+		return table[v];
+
+	}
+
+}

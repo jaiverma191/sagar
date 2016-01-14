@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;listOfNode&apos; in &apos;com.hiring.postgres.Main.main(...)&apos; to &apos;listOfNode1&apos;&#x0A;- Original project: &apos;com.hiring.postgres&apos;&#x0A;- Original element: &apos;com.hiring.postgres.Main.main(String[]).listOfNode&apos;&#x0A;- Renamed element: &apos;listOfNode&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;listOfNode&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.hiring.postgres{Main.java[Main~main~\[QString;@listOfNode!286!327!297!306!QList\&lt;QNode;&gt;;!0!false" name="listOfNode1" references="true" stamp="1450733485898" version="1.0"/>
+</session>

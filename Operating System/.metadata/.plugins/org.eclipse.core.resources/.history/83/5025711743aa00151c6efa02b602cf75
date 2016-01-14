@@ -1,0 +1,38 @@
+package com.hiring.atm;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+
+public class User {
+	private String firstName;
+	private String lastName;
+	private String uuid;
+	private byte pinHash[];
+	private ArrayList<Account> accounts;
+
+	public User(String firstName, String lastName, String pin, Bank theBank) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+
+		try {
+			MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+			this.pinHash = messageDigest.digest(pin.getBytes());
+		} catch (NoSuchAlgorithmException e) {
+			System.err.println("error, caught NoSuchAlgorithmException");
+			e.printStackTrace();
+			System.exit(1);
+		}
+		uuid = theBank.getNewUserUUID();
+		accounts = new ArrayList<>();
+		System.out.printf("New User %s, with ID %s created", firstName, lastName, uuid);
+	}
+
+	public void addAccount(Account account) {
+		this.accounts.add(account);
+	}
+
+	public String getUUID() {
+		return uuid;
+	}
+}

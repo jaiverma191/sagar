@@ -1,0 +1,6 @@
+package com.lucky.pattern.behavioral.command;
+
+public interface ICommand {
+
+	void execute();
+}

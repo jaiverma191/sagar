@@ -1,0 +1,11 @@
+package com.hiring.atm;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Bank {
+	private String name;
+	private HashMap<String, User> users;
+	private HashMap<String, Account> accounts;
+}

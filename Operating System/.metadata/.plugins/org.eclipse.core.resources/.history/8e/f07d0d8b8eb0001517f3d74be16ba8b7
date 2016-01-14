@@ -1,0 +1,17 @@
+package com.hiring.string;
+
+public class Test {
+
+	public static void main(String[] args) {
+		 stringToLong("hello");
+	}
+
+	private static long stringToLong(String string) {
+		StringBuffer sb = new StringBuffer();
+		for(int i = 0; i < string.length(); ++i)
+		{
+		  int ch = (int)string.charAt(i);
+		}
+		return 0;
+	}
+}

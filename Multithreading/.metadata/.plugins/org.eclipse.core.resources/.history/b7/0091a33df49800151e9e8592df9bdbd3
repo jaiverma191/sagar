@@ -1,0 +1,80 @@
+package com.hiring.producer.consumer;
+
+import java.util.Vector;
+
+public class ProducerConsumerDemo {
+
+	public static void main(String[] args) {
+		Vector<Integer> sQueue = new Vector<Integer>();
+		int size = 4;
+		Thread producerThread = new Thread(new ProducerThread(sQueue, size));
+		Thread consumerThread = new Thread();
+		producerThread.start();
+		consumerThread.start();
+
+	}
+}
+
+class ProducerThread implements Runnable {
+	private final Vector<Integer> sQueue;
+	private final int SIZE;
+
+	public ProducerThread(Vector<Integer> queue, int size) {
+		this.SIZE = size;
+		this.sQueue = queue;
+	}
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 12; i++) {
+			try {
+				produce(i);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	private void produce(int i) throws InterruptedException {
+		while (sQueue.size() == SIZE) {
+			synchronized (sQueue) {
+				System.out.println("Queue is Full " + Thread.currentThread().getName() + " waiting");
+				sQueue.wait();
+			}
+		}
+		synchronized (sQueue) {
+			sQueue.add(i);
+			sQueue.notifyAll();
+		}
+	}
+
+}
+
+class ConsumerThread implements Runnable {
+	private final Vector<Integer> sQueue;
+	private final int SIZE;
+
+	public ConsumerThread(Vector<Integer> queue, int size) {
+		this.SIZE = size;
+		this.sQueue = queue;
+	}
+
+	@Override
+	public void run() {
+		while (true) {
+			System.out.println("Consuming Element "+consume());
+		}
+
+	}
+
+	private Integer consume() {
+		while(sQueue.isEmpty())
+		{
+			synchronized (sQueue) {
+			System.out.println("Queue is empty "+Thread.currentThread().getName()+" waiting for new Thread");
+			sQueue.wait();
+			}
+		}
+	}
+
+}

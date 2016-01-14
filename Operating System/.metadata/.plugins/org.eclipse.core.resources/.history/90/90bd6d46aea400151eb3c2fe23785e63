@@ -1,0 +1,68 @@
+package com.hiring.tree;
+
+import java.util.HashMap;
+import java.util.Vector;
+
+public class Question9 {
+
+	public static void main(String[] args) {
+		TreeNode root = createTree();
+		BTreePrinter.printNode(root);
+		System.err.println("Printing top view");
+		print(root);
+	}
+
+	private static void print(TreeNode root) {
+		if (root == null) {
+			return;
+		}
+		int minIndex = Integer.MAX_VALUE;
+		int maxIndex = Integer.MIN_VALUE;
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		Vector<QueueNode> queue = new Vector<QueueNode>();
+		queue.add(new QueueNode(root, 0));
+		while (!queue.isEmpty()) {
+			QueueNode node = queue.get(0);
+			int distance = node.distance;
+			TreeNode item = node.item;
+			if (!map.containsKey(distance)) {
+				map.put(distance, item.value);
+				if (distance < minIndex)
+					minIndex = distance;
+				if (distance > maxIndex)
+					maxIndex = distance;
+			}
+			if (item.left != null) {
+				queue.add(new QueueNode(item.left, distance - 1));
+			}
+			if (item.right!= null) {
+				queue.add(new QueueNode(item.right, distance - 1));
+			}
+
+		}
+	}
+
+	private static TreeNode createTree() {
+		TreeNode root = new TreeNode(1);
+		root.left = new TreeNode(2);
+		root.left.left = new TreeNode(4);
+		root.left.left.left = new TreeNode(7);
+		root.left.left.right = new TreeNode(8);
+		root.left.right = new TreeNode(5);
+		root.right = new TreeNode(3);
+		root.right.right = new TreeNode(6);
+		root.right.right.left = new TreeNode(9);
+		root.right.right.right = new TreeNode(10);
+		return root;
+	}
+}
+
+class QueueNode {
+	public TreeNode item;
+	public int distance;
+
+	public QueueNode(TreeNode item, int distance) {
+		this.item = item;
+		this.distance = distance;
+	}
+}

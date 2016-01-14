@@ -1,0 +1,12 @@
+1450958544829	Copy files
+1450958551360	Delete elements
+1450959921068	Delete elements
+1450959937720	Delete element
+1450960879106	Rename type 'AAM'
+1450961027082	Extract local variable 'messageDigest'
+1450961695556	Rename field 'user'
+1450961702820	Rename local variable 'user'
+1450963485646	Rename local variable 'u'
+1450964087886	Extract local variable 'digest'
+1450964901859	Extract local variable 'userLogin'
+1450965935858	Rename field 'transaction'

@@ -1,0 +1,26 @@
+package com.sagar.pattern.behavioral.command;
+
+public class FileSystemClient {
+	public static void main(String[] args) {
+		// Creating the receiver object
+		IFileSystemReceiver fs = FileSystemReceiverUtil.getUnderlyingFileSystem();
+
+		// creating command and associating with receiver
+		OpenFileCommand openFileCommand = new OpenFileCommand(fs);
+		WriteFileCommand writeFileCommand = new WriteFileCommand(fs);
+		CloseFileCommand closeFileCommand = new CloseFileCommand(fs);
+
+		// Creating invoker
+		FileInvoker file = new FileInvoker();
+
+		//Queuing commands to invoker
+		file.addCommand(openFileCommand);
+		file.addCommand(writeFileCommand);
+		file.addCommand(closeFileCommand);
+
+		// perform action on invoker object
+		file.execute();
+
+	}
+
+}

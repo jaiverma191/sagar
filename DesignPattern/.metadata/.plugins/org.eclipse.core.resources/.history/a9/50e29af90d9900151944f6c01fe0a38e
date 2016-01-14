@@ -1,0 +1,10 @@
+package com.hiring.custom.lock;
+
+public class ReenteredCode {
+MyLock lock= new MyLock();
+
+public ReenteredCode() {
+}
+
+	
+}

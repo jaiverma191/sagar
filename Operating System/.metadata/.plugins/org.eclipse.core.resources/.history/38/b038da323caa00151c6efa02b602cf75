@@ -1,0 +1,17 @@
+package com.hiring.atm;
+
+import java.util.ArrayList;
+
+public class User {
+	private String firstName;
+	private String lastName;
+	private String uuid;
+	private byte pinHash[];
+	private ArrayList<Account> accounts;
+
+	public User(String firstName,String lastName,String pin,Bank theBank) {
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.pinHash=pin.getBytes();
+	}
+}

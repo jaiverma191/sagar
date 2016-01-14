@@ -1,0 +1,5 @@
+package com.lucky.pattern.creatitional.builder;
+
+public interface StreetAddress {
+
+}

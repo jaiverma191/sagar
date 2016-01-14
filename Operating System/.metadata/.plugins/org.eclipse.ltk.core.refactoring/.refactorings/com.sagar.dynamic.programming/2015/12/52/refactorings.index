@@ -1,0 +1,9 @@
+1450669795550	Extract local variable 'charArray'
+1450669812349	Extract local variable 'charArray2'
+1450669919525	Extract local variable 'str2len'
+1450669927397	Extract local variable 'str1len'
+1451132816952	Extract local variable 'declaredMethods'
+1451132895683	Extract local variable 'name'
+1451133992538	Delete element
+1451136271026	Extract local variable 'inner'
+1451136339459	Delete element

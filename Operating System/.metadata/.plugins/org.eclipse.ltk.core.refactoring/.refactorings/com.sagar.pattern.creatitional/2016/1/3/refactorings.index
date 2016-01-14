@@ -1,0 +1,12 @@
+1452448780108	Rename type 'StreetAddress'
+1452449106286	Encapsulate field 'galiNo'
+1452449114202	Encapsulate field 'houseNo'
+1452451277336	Delete element
+1452451286541	Delete elements
+1452532938404	Rename package 'com.lucky.pattern.creatitional.abstrac.factory'
+1452532947496	Rename package 'com.lucky.pattern.creatitional.singleton'
+1452532955444	Rename package 'com.lucky.pattern.creatitional.builder'
+1452532963886	Rename package 'com.lucky.pattern.creatitional.factory'
+1452532971473	Rename package 'com.lucky.pattern.creatitional.factory.method'
+1452532978138	Rename package 'com.lucky.pattern.creatitional.object.pool'
+1452532986477	Rename package 'com.lucky.pattern.creatitional.prototype'

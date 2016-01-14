@@ -1,0 +1,13 @@
+package com.hiring.atm;
+
+import java.util.HashMap;
+
+public class Bank {
+	private String name;
+	private HashMap<String, User> users;
+	private HashMap<String, Account> accounts;
+
+	public String getNewUserUUID() {
+		return null;
+	}
+}

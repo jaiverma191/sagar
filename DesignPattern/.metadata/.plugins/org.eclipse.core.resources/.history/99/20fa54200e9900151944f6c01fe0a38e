@@ -1,0 +1,25 @@
+package com.hiring.custom.lock;
+
+public class ReenteredCode {
+	MyLock lock = new MyLock();
+
+	public ReenteredCode(MyLock lock) {
+		this.lock = lock;
+	}
+
+	public void enter()
+	{
+		System.out.println("Acquiring lock: "+Thread.currentThread().getName());
+		lock.lock();
+		System.out.println("Got the lock: "+Thread.currentThread().getName());
+		reenter();
+		lock.unLock();
+		System.out.println("Releasing lock: "+Thread.currentThread().getName());
+	}
+	
+	public void reenter()
+	{
+		
+		
+	}
+}

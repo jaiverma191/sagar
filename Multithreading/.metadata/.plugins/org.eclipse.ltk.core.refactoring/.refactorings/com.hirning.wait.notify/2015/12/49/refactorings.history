@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.hirning.wait.notify.WaitNotifyExample&apos; to &apos;WaitNotifyClass&apos;&#x0A;- Original project: &apos;com.hirning.wait.notify&apos;&#x0A;- Original element: &apos;com.hirning.wait.notify.WaitNotifyExample&apos;&#x0A;- Renamed element: &apos;com.hirning.wait.notify.WaitNotifyClass&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;WaitNotifyExample&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.hirning.wait.notify{WaitNotifyExample.java[WaitNotifyExample" matchStrategy="1" name="WaitNotifyClass" qualified="false" references="true" similarDeclarations="false" stamp="1449066276241" textual="false" version="1.0"/>
+</session>

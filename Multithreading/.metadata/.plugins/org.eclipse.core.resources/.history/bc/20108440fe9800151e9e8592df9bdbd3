@@ -1,0 +1,10 @@
+package com.hiring.deadlock;
+
+public class Deadlock {
+
+	public static void main(String[] args) {
+		String r1= "Resource1";
+		String r2="Resource2";
+	}
+	
+}

@@ -1,0 +1,8 @@
+1450192766180	Extract local variable 'checkElement'
+1450194311343	Encapsulate field 'i'
+1450194315667	Encapsulate field 'j'
+1450194663379	Extract local variable 'e'
+1450194871457	Extract local variable 'remove'
+1450194885523	Extract local variable 'i'
+1450194896263	Extract local variable 'j'
+1450235482083	Extract local variable 'length'

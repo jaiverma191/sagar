@@ -1,0 +1,29 @@
+package com.hirning.wait.notify;
+
+public class WaitNotifyClass {
+
+	public static void main(String[] args) {
+
+		int total;
+		Thread adderThread = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				synchronized (this) {
+						
+					}
+				}
+
+			}
+		});
+
+		synchronized (adderThread) {
+			try {
+				adderThread.wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

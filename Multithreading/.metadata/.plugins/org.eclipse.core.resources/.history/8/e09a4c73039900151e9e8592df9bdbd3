@@ -1,0 +1,10 @@
+package com.hiring.custom.lock;
+
+public class IncThread {
+
+	final private Counter1 counter;
+	
+	public IncThread(Counter1 counter) {
+		this.counter=counter;
+	}
+}

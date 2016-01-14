@@ -1,0 +1,73 @@
+package com.sagar.arrays;
+
+import java.util.Vector;
+
+public class Question6 {
+
+	public static void main(String[] args) {
+		int arr[][] = { { 2, 1, 0, 2, 1 }, { 1, 0, 1, 2, 1 }, { 1, 0, 0, 2, 1 } };
+		int row = 3;
+		int coloumn = 5;
+		Vector<Node> queue = new Vector<Node>();
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < coloumn; j++) {
+				if (arr[i][j] == 2) {
+					Node e = new Node(i, j);
+					queue.add(e);
+				}
+			}
+		}
+		int maxDays = 0;
+		Vector<Node> tempQueue = new Vector<Node>();
+		while (!queue.isEmpty()) {
+			tempQueue.clear();
+			for (; !queue.isEmpty();) {
+
+				Node remove = queue.remove(0);
+				int i = remove.getI();
+				int j = remove.getJ();
+				if (i - 1 > 0 && arr[i - 1][j] == 1) {
+					tempQueue.add(new Node(i - 1, j));
+					arr[i - 1][j] = 2;
+				}
+				if (j - 1 > 0 && arr[i][j - 1] == 1) {
+					tempQueue.add(new Node(i, j - 1));
+					arr[i][j - 1] = 2;
+				}
+				if (i + 1 < row && arr[i + 1][j] == 1) {
+					tempQueue.add(new Node(i + 1, j));
+					arr[i + 1][j] = 2;
+				}
+				if (j + 1 < coloumn && arr[i][j + 1] == 1) {
+					tempQueue.add(new Node(i, j + 1));
+					arr[i][j + 1] = 2;
+				}
+
+			}
+			if (!tempQueue.isEmpty()) {
+				maxDays++;
+				queue.addAll(tempQueue);
+			}
+		}
+
+		System.out.println(maxDays);
+	}
+}
+
+class Node {
+	private int i;
+	private int j;
+
+	public Node(int i, int j) {
+		this.i = i;
+		this.j = j;
+	}
+
+	public int getI() {
+		return i;
+	}
+
+	public int getJ() {
+		return j;
+	}
+}

@@ -1,0 +1,11 @@
+package com.lucky.pattern.creatitional.builder;
+
+public class Main {
+	public static void main(String[] args) {
+		final Person person1 = new Person.PersonBuilder(
+				new FullName.FullNameBuilder(new Name("Jai"), new Name("Verma")).createFullName(),
+				new Address.AddressBuilder(new City("Gurgaon"), new State("Haryana")).createAddress())
+						.gender(Gender.MALE).employment(EmploymentStatus.UNEMPLOYED).homeOwner(HomeownerStatus.RENTEE).createPerson();
+		System.out.println(person1);
+	}
+}

@@ -1,0 +1,81 @@
+package com.hiring.datastructure;
+
+public class Heap {
+	private int[] heapArray;
+	private int maxSize;
+	private int currentSize;
+
+	public Heap(int maxSize) {
+		this.maxSize = maxSize;
+		this.currentSize = 0;
+		this.heapArray = new int[maxSize];
+	}
+
+	public int[] getHeapArray() {
+		return heapArray;
+	}
+
+	public void setHeapArray(int[] heapArray) {
+		this.heapArray = heapArray;
+	}
+
+	public int getMaxSize() {
+		return maxSize;
+	}
+
+	public void setMaxSize(int maxSize) {
+		this.maxSize = maxSize;
+	}
+
+	public int getCurrentSize() {
+		return currentSize;
+	}
+
+	public void setCurrentSize(int currentSize) {
+		this.currentSize = currentSize;
+	}
+
+	public Boolean insert(int val) {
+		if (currentSize == maxSize) {
+			return false;
+		}
+		heapArray[currentSize] = val;
+		insertionBalance(currentSize++);
+		return true;
+
+	}
+
+	public void insertionBalance(int pos) {
+		int parent = (pos - 1) / 2;
+		int element = heapArray[pos];
+		while (pos > 0 && heapArray[parent] < element) {
+			heapArray[pos] = heapArray[parent];
+			pos = parent;
+			parent = (parent - 1) / 2;
+		}
+		heapArray[pos] = element;
+	}
+
+	public void print() {
+		for (int i : heapArray) {
+			System.out.print(i + " ");
+		}
+		System.out.println("");
+	}
+
+	public static void main(String[] args) {
+		Heap h = new Heap(10);
+		//h.print();
+		h.insert(5);
+		//h.print();
+		h.insert(2);
+		//h.print();
+		h.insert(1);
+		h.insert(4);
+		h.insert(7);
+		h.insert(6);
+		h.print();
+
+	}
+
+}

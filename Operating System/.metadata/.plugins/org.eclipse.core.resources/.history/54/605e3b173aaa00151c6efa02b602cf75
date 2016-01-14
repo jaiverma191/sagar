@@ -1,0 +1,5 @@
+package com.hiring.atm;
+
+public class Account {
+
+}

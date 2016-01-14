@@ -1,0 +1,27 @@
+package com.sagar.pattern.creatitional.factory;
+
+import java.util.HashMap;
+
+public class ProductFactory {
+	private ProductFactory()
+	{
+		
+	}
+	private HashMap<String, Product> m_RegisteredProducts = new HashMap<>();
+	private static ProductFactory instance = new ProductFactory();
+
+	public void registerProduct(String productID, Product p) {
+		m_RegisteredProducts.put(productID, p);
+	}
+
+	public Product createProduct(String productID) {
+		return ((Product) m_RegisteredProducts.get(productID)).createProduct();
+	}
+
+	public static ProductFactory getInstance() {
+		return instance;
+	}
+
+	
+
+}

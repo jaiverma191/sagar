@@ -1,0 +1,40 @@
+package com.hiring.linked.list;
+
+public class Test {
+	public static void main(String[] args) {
+		Node node = new Node(5);
+		Node node1 = new Node(6, node);
+		Node node2 = new Node(7, node1);
+		Node node3 = new Node(7, node2);
+		Node node4 = new Node(6, node3);
+		Node node5 = new Node(5, node4);
+		print(node5);
+		System.out.println(isPalindromeUtil(node5,node5));
+	}
+
+	private static void print(Node node) {
+		while (node != null) {
+			System.err.print(node.value + " ");
+			node = node.next;
+		}
+		System.err.print("\n");
+	}
+
+	static boolean isPalindromeUtil(Node left, Node right) {
+		/* stop recursion when right becomes NULL */
+		if (right == null)
+			return true;
+
+		boolean isp = isPalindromeUtil(left, right.next);
+		if (isp == false)
+			return false;
+
+		/* Check values at current left and right */
+		boolean isp1 = (right.value == left.value);
+
+		/* Move left to next node */
+		left = left.next;
+
+		return isp1;
+	}
+}

@@ -1,0 +1,68 @@
+package com.hiring.linked.list;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		Node node = new Node(10);
+		Node node1 = new Node(9, node);
+		Node node2 = new Node(8, node1);
+		Node node3 = new Node(7, node2);
+		Node node4 = new Node(6, node3);
+		Node node5 = new Node(5, node4);
+		Node node6 = new Node(4, node5);
+		Node node7 = new Node(3, node6);
+		node.next = node4;
+		Node start = new Node(2, node7);
+		detectAndRemoveLoop(start);
+		printList(start);
+
+	}
+
+	private static void printList(Node start) {
+		Node temp = start;
+		while (temp != null) {
+			System.out.print(temp.value + " ");
+			temp = temp.next;
+		}
+	}
+
+	private static void detectAndRemoveLoop(Node start) {
+		// TODO Auto-generated method stub
+		Node fast = start, slow = start;
+		boolean loopDetected = false;
+		while (slow != null && fast.next != null && fast.next != null ) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if (slow == fast) {
+				loopDetected = true;
+				break;
+			}
+		}
+		if (!loopDetected)
+			return;
+		int loopSize = 1;
+		Node temp = slow;
+		while (temp.next != slow) {
+			loopSize++;
+			temp = temp.next;
+		}
+
+		Node firstNode = start;
+		Node secondNode = start, previous = start;
+		for (int i = 0; i < loopSize; i++) {
+			previous = secondNode;
+			secondNode = secondNode.next;
+		}
+		if (secondNode == firstNode) { // for handling loop
+			previous.next = null;
+			return;
+		}
+		while (firstNode.next != secondNode.next) {
+			firstNode = firstNode.next;
+			secondNode = secondNode.next;
+		}
+
+		secondNode.next = null;
+
+	}
+}

@@ -1,0 +1,23 @@
+package com.hiring.atm;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Bank {
+	private String name;
+	private ArrayList<User> users;
+	private ArrayList<Account> accounts;
+
+	public String getNewUserUUID() {
+		return null;
+	}
+
+	public String getNewAccountUUID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void addAccount(Account account) {
+		this.accounts.add(account);
+	}
+}

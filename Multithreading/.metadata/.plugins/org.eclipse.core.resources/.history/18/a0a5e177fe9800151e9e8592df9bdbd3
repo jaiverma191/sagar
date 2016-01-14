@@ -1,0 +1,26 @@
+package com.hiring.deadlock;
+
+public class Deadlock {
+
+	public static void main(String[] args) {
+		String r1= "Resource1";
+		String r2="Resource2";
+		
+		Thread thread1= new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+			}
+		});
+		
+		Thread thread2= new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+			}
+		});
+	}
+	
+}

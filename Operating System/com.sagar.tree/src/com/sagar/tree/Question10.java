@@ -1,0 +1,63 @@
+package com.sagar.tree;
+
+public class Question10 {
+
+	public static void main(String[] args) {
+
+		TreeNode root = createTree();
+		printKDistanceNode(root, root.right, 2);
+	}
+
+	private static int printKDistanceNode(TreeNode root, TreeNode node, int target) {
+		if (root == null)
+			return -1;
+		if (root == node) {
+			printKDistanceDown(root, target);
+			return 0;
+		}
+		int dl = printKDistanceNode(root.left, node, target);
+		if (dl != -1) {
+			if (dl + 1 == target) {
+				System.out.println(root.value);
+			} else {
+				printKDistanceDown(root.right, target - dl - 2);
+			}
+			return dl + 1;
+		}
+		int dr = printKDistanceNode(root.right, node, target);
+		if (dr != -1) {
+			if (dr + 1 == target) {
+				System.out.println(root.value);
+			} else {
+				printKDistanceDown(root.left, target - dr - 2);
+			}
+			return dr + 1;
+		}
+		return -1;
+	}
+
+	private static void printKDistanceDown(TreeNode root, int target) {
+		if (root == null || target < 0)
+			return;
+		if (target == 0) {
+			System.out.println(root.value);
+			return;
+		}
+		printKDistanceDown(root.left, target - 1);
+		printKDistanceDown(root.right, target - 1);
+	}
+
+	private static TreeNode createTree() {
+		TreeNode root = new TreeNode(1);
+		root.left = new TreeNode(2);
+		root.left.left = new TreeNode(4);
+		root.left.left.left = new TreeNode(7);
+		root.left.left.right = new TreeNode(8);
+		root.left.right = new TreeNode(5);
+		root.right = new TreeNode(3);
+		root.right.right = new TreeNode(6);
+		root.right.right.left = new TreeNode(9);
+		root.right.right.right = new TreeNode(10);
+		return root;
+	}
+}

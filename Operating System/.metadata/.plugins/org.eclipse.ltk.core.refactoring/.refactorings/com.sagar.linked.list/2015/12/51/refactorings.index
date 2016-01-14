@@ -1,0 +1,8 @@
+1450263570403	Encapsulate field 'value'
+1450263576272	Encapsulate field 'next'
+1450263730505	Rename local variable 'head2'
+1450264566061	Rename local variable 'node5'
+1450265632581	Extract local variable 'firstNumberSize'
+1450265644386	Extract local variable 'secondNumberSize'
+1450265870756	Extract local variable 'add'
+1450267543703	Extract local variable 'addCarry'

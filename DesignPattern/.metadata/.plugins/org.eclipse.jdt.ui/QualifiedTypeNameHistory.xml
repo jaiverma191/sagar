@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.method.IProduct"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.method.Creator"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.method.ConcreteCreator"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.method.ConcreteProduct"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.Product"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.ProductFactory"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.factory.OneProduct"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.builder.ASCIIConverter"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.builder.ASCIIText"/>
+<fullyQualifiedTypeName name="javax.naming.Name"/>
+<fullyQualifiedTypeName name="java.lang.Thread.State"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.builder.State"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.builder.Gender"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.builder.EmploymentStatus"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.builder.HomeownerStatus"/>
+<fullyQualifiedTypeName name="java.lang.Cloneable"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.creatitional.object.pool.ObjectPool"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.behavioral.command.Order"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.behavioral.command.IFileSystemReceiver"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+<fullyQualifiedTypeName name="com.lucky.pattern.behavioral.command.ICommand"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="threading.MyThread"/>
+</qualifiedTypeNameHistroy>

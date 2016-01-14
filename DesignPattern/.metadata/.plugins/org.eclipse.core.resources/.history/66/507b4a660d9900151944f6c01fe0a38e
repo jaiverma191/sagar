@@ -1,0 +1,17 @@
+package com.hiring.custom.lock;
+
+public class IncThread extends Thread {
+
+	final private Counter1 counter;
+
+	public IncThread(Counter1 counter) {
+		this.counter = counter;
+		this.setName("Inc Thread");
+	}
+
+	@Override
+	public void run() {
+		counter.decrement();
+	}
+
+}

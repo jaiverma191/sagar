@@ -1,0 +1,33 @@
+package com.lucky.pattern.creatitional.builder;
+
+public class CityAreaAdress implements ICityAreaAddress {
+	private Integer galiNo;
+	private Integer swectorNumber;
+
+	public CityAreaAdress(Integer galiNo, Integer swectorNumber) {
+		this.galiNo = galiNo;
+		this.swectorNumber = swectorNumber;
+	}
+
+	public Integer getGaliNo() {
+		return galiNo;
+	}
+
+	public void setGaliNo(Integer galiNo) {
+		this.galiNo = galiNo;
+	}
+
+	public Integer getSwectorNumber() {
+		return swectorNumber;
+	}
+
+	public void setSwectorNumber(Integer swectorNumber) {
+		this.swectorNumber = swectorNumber;
+	}
+
+	@Override
+	public String getAdress() {
+		return "Gali NO" + galiNo;
+	}
+
+}

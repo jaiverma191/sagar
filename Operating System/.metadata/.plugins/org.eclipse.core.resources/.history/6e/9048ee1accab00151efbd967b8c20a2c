@@ -1,0 +1,16 @@
+package com.hiring.dynamic.programming;
+
+public class Prime {
+
+	void checkPrime(int a) {
+
+	}
+
+	void checkPrime(int a, int b) {
+
+	}
+
+	void checkPrime(int a, int b, int c) {
+
+	}
+}

@@ -1,0 +1,18 @@
+package com.hiring.custom.lock;
+
+public class DecThread extends Thread{
+
+	final private Counter1 counter;
+	
+	public DecThread(Counter1 counter) {
+		this.counter=counter;
+		this.setName("Dec Thread");
+	}
+
+	@Override
+	public void run() {
+		counter.decrement()
+		
+	}
+	
+}

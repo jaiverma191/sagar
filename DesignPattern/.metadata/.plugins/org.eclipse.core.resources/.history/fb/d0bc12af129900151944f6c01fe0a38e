@@ -1,0 +1,13 @@
+package com.hiring.thread.pool;
+
+import java.util.concurrent.BlockingQueue;
+
+public class PoolThread extends Thread{
+
+	private final BlockingQueue taskQueue;
+	
+	public PoolThread(BlockingQueue taskQueue) {
+
+	}
+
+}

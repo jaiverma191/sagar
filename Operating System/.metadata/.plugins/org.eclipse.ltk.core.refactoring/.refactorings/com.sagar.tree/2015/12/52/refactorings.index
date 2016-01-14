@@ -1,0 +1,16 @@
+1450592539531	Extract local variable 'size'
+1450592565786	Extract local variable 'remove'
+1450790188024	Extract local variable 'root'
+1450793218308	Rename local variable 'node'
+1450928773363	Delete element
+1450929477901	Delete element
+1450951600011	Extract method 'createBST'
+1450951656635	Rename type 'BinarySearchTree'
+1450951948083	Rename type 'DoubleLinkedLIst'
+1450952024415	Rename type 'Question'
+1450952149741	Extract local variable 'createBST'
+1450952351195	Extract local variable 'right'
+1450952368629	Extract local variable 'right'
+1450952758231	Extract local variable 'leftList'
+1450952969622	Rename local variable 'value2'
+1450953013521	Extract local variable 'append'

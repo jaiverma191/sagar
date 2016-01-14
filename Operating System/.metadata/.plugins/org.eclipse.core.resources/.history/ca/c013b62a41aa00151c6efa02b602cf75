@@ -1,0 +1,30 @@
+package com.hiring.atm;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Bank {
+	private String name;
+	private ArrayList<User> users;
+	private ArrayList<Account> accounts;
+
+	public String getNewUserUUID() {
+		String uuid;
+		Random random = new Random();
+		int len = 6;
+		boolean nonUnique=false;
+		do
+		{
+			
+		}while(nonUnique);
+		return null;
+	}
+
+	public String getNewAccountUUID() {
+		return null;
+	}
+
+	public void addAccount(Account account) {
+		this.accounts.add(account);
+	}
+}

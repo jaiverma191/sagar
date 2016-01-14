@@ -1,0 +1,17 @@
+package com.hiring.string;
+
+public class ManachersAlgorithm {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	private static char[] addBoundaries(char[] cs)
+	{
+		if(cs==null || cs.length==0)
+		{
+			return "".toCharArray();
+		}
+	}
+
+}

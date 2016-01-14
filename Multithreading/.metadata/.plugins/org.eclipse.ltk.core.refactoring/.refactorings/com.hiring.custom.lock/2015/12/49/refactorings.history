@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IncThread.java&apos; to &apos;com.hiring.custom.lock/src/com.hiring.custom.lock&apos;&#x0A;- Original project: &apos;com.hiring.custom.lock&apos;&#x0A;- Destination element: &apos;com.hiring.custom.lock/src/com.hiring.custom.lock&apos;&#x0A;- Original element: &apos;com.hiring.custom.lock.IncThread.java&apos;" description="Copy compilation unit" destination="/src&lt;com.hiring.custom.lock" element1="/src&lt;com.hiring.custom.lock{IncThread.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1449067614523" units="1" version="1.0"/>
+</session>

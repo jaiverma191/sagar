@@ -1,0 +1,26 @@
+package com.hiring.linked.list;
+
+public class Test {
+	static Node left;
+	public static void main(String[] args) {
+		Node node = new Node(5);
+		Node node1 = new Node(4, node);
+		Node node2 = new Node(7, node1);
+		Node node4 = new Node(6, node2);
+		Node node5 = new Node(5, node4);
+		left = node5;
+		System.out.println(isPalindrome(node));
+	}
+
+
+	static boolean isPalindrome(Node right) {
+		if (right == null)
+			return true;
+		boolean isp = isPalindrome(right.next);
+		if (isp == false)
+			return false;
+		boolean isp1 = (right.value == left.value);
+		left = left.next;
+		return isp1;
+	}
+}

@@ -1,0 +1,31 @@
+package com.hiring.custom.lock;
+
+public class MyLock {
+
+	private Boolean isLocked = false;
+	private Thread lockedBy = null;
+	private Integer lockedCount = 0;
+
+	public synchronized void lock() {
+		Thread callingThread = Thread.currentThread();
+		while (isLocked && lockedBy != callingThread) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		isLocked = true;
+		lockedBy = callingThread;
+		lockedCount++;
+	}
+
+	public synchronized void unLock() {
+		if(Thread.currentThread()==this.lockedBy){
+			isLocked = false;
+			notify();
+			
+		}
+	}
+
+}

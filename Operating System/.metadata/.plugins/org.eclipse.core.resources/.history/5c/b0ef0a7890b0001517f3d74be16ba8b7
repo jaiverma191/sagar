@@ -1,0 +1,8 @@
+package com.hiring.string;
+
+public class Node {
+
+	public Node prev;
+	public int d;
+
+}

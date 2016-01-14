@@ -1,0 +1,15 @@
+package com.hiring.binary.tree;
+
+public class BinarySearchNode  {
+
+	public int value;
+
+	public BinarySearchNode left;
+
+	public BinarySearchNode right;
+
+	public BinarySearchNode(int value) {
+		this.value = value;
+	}
+
+}

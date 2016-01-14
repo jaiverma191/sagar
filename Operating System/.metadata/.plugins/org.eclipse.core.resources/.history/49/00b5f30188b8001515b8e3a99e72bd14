@@ -1,0 +1,13 @@
+package com.hiring.postgres;
+
+import java.util.List;
+
+class Node {
+	int value;
+	List<Node> childNodes;
+
+	public Node(int value) {
+		this.value = value;
+	}
+
+}

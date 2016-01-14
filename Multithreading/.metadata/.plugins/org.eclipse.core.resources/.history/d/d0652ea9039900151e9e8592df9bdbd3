@@ -1,0 +1,5 @@
+package com.hiring.custom.lock;
+
+public class UseMyLock {
+
+}

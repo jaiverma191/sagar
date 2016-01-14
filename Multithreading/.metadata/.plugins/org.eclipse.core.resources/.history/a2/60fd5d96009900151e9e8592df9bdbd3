@@ -1,0 +1,16 @@
+package com.hirning.wait.notify;
+
+public class WaitNotifyClass {
+	
+	public static void main(String[] args) {
+		
+		Thread adderThread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+			}
+		});
+	}
+
+}

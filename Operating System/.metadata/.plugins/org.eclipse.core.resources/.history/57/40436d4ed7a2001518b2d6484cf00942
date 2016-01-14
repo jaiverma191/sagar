@@ -1,0 +1,14 @@
+package com.hiring.string;
+
+public class ManachersAlgorithm {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	private static char[] addBoundaries(char[] cs)
+	{
+		
+	}
+
+}

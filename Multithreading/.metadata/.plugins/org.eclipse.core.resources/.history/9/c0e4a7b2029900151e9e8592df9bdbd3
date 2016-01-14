@@ -1,0 +1,6 @@
+package com.hiring.custom.lock;
+
+public class Counter1 {
+
+	private MyLock lock = new MyLock();
+}

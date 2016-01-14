@@ -1,0 +1,25 @@
+package com.hiring.custom.lock;
+
+public class Counter1 {
+
+	private MyLock lock = new MyLock();
+	private Integer count = 0;
+
+	public Integer increment() {
+		
+		System.out.println("Acquiring lock: "+Thread.currentThread().getName());
+		lock.lock();
+		Integer newCount = count + 1;
+		count++;
+		lock.unLock();
+		return newCount;
+	}
+
+	public Integer decrement() {
+		lock.lock();
+		Integer newCount = count - 1;
+		count--;
+		lock.unLock();
+		return newCount;
+	}
+}

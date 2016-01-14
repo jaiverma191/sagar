@@ -1,0 +1,28 @@
+package com.lucky.pattern.creatitional.builder;
+
+public class HillAreaAdress implements IHillAreaAddress {
+	private Integer galiNo;
+	private Integer houseNo;
+
+	@Override
+	public String getAdress() {
+		return "Gali No:" + galiNo + " House No: " + houseNo;
+	}
+
+	public Integer getGaliNo() {
+		return galiNo;
+	}
+
+	public void setGaliNo(Integer galiNo) {
+		this.galiNo = galiNo;
+	}
+
+	public Integer getHouseNo() {
+		return houseNo;
+	}
+
+	public void setHouseNo(Integer houseNo) {
+		this.houseNo = houseNo;
+	}
+
+}

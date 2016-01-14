@@ -1,0 +1,89 @@
+package com.hiring.interview.expedia;
+
+public class MatrixSmallest {
+
+	class HeapNode {
+		int val; // value to be stored
+		int r; // Row number of value in 2D array
+		int c; // Column number of value in 2D array
+
+		public HeapNode(int val, int r, int c) {
+			this.val = val;
+			this.r = r;
+			this.c = c;
+		}
+	};
+
+	// A utility function to swap two HeapNode items.
+	void swap(HeapNode x, HeapNode y) {
+		HeapNode z = x;
+		x = y;
+		y = z;
+	}
+
+	// This function returns kth smallest element in a 2D array mat[][]
+	int kthSmallest(Integer[][] mat, int n, int k) {
+		// k must be greater than 0 and smaller than n*n
+		if (k <= 0 || k > n * n)
+			return Integer.MAX_VALUE;
+
+		// Create a min heap of elements from first row of 2D array
+		HeapNode harr[] = new HeapNode[k];
+		for (int i = 0; i < n; i++)
+			harr[i] = new HeapNode(mat[0][i], 0, i);
+
+		HeapNode hr = null;
+		int val = hr.val;
+		for (int i = 0; i < k; i++) {
+			hr = harr[0];
+			System.out.println(val);
+			if(hr.r==0)
+			{
+				harr[0] = new HeapNode(mat[hr.r + 1][hr.c], hr.r + 1, hr.c);
+			}
+			// Get next value from column of root's value. If the
+			// value stored at root was last value in its column,
+			// then assign INFINITE as next value
+			if (hr.r < (n - 1)) {
+				if (hr.c < (n - 1)) {
+					if (mat[hr.r + 1][hr.c] <= mat[hr.r][hr.c + 1]) {
+						harr[0] = new HeapNode(mat[hr.r + 1][hr.c], hr.r + 1, hr.c);
+					}
+					else
+					{
+						harr[0] = new HeapNode(mat[hr.r ][hr.c+1], hr.r , hr.c+1);
+					}
+				} else {
+					harr[0] = new HeapNode(Integer.MAX_VALUE, hr.r + 1, hr.c);
+				}
+			} else {
+				harr[0] = new HeapNode(Integer.MAX_VALUE, hr.r + 1, hr.c);
+			}
+
+			// Update heap root with next value
+
+			HeapNode firstNode = harr[0];
+			for (int j = n - 1; j >= 1; j--) {
+				if (firstNode.val >= harr[j].val) {
+					int l = 0;
+					for (; l < j; l++) {
+						harr[l] = harr[l + 1];
+					}
+					harr[l] = firstNode;
+					break;
+				}
+			}
+		}
+
+		// Return the value at last extracted root
+		return val;
+	}
+
+	public static void main(String[] args) {
+
+		Integer mat[][] = { { 10, 20, 30, 40 }, { 15, 25, 35, 45 }, { 25, 29, 37, 48 }, { 32, 33, 39, 50 }, };
+		MatrixSmallest x = new MatrixSmallest();
+		System.out.println(x.kthSmallest(mat, 4, 7));
+	}
+
+}

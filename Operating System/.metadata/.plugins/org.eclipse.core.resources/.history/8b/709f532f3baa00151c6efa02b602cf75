@@ -1,0 +1,17 @@
+package com.hiring.atm;
+
+import java.util.Date;
+
+public class Transaction {
+
+	private double amount;
+
+	private Date transaction;
+
+	private String memo;
+
+	private User user;
+
+	private Account account;
+
+}

@@ -1,0 +1,7 @@
+package com.hiring.thread.pool;
+
+public class UseThreadPool {
+	public static void main(String[] args) {
+
+	}
+}

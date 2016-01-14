@@ -1,0 +1,73 @@
+2015-12-16 00:49:17,946 [Worker-106] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hiring.tomcat:com.hiring.tomcat:0.0.1-SNAPSHOT @ /home/lucky/Documents/practice/com.hiring.tomcat/pom.xml.
+2015-12-16 00:49:20,567 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-16 00:49:20,568 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-16 00:49:20,576 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-16 00:49:20,576 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-16 00:49:21,035 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-16 00:49:21,036 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-16 00:49:21,037 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-16 00:49:21,040 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-17 10:11:01,959 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hiring.tomcat:com.hiring.tomcat:0.0.1-SNAPSHOT @ /home/lucky/Documents/practice/com.hiring.tomcat/pom.xml.
+2015-12-17 10:11:08,649 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-17 10:11:08,654 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-17 10:11:08,673 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-17 10:11:08,674 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-18 08:44:01,731 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hiring.tomcat:com.hiring.tomcat:0.0.1-SNAPSHOT @ /home/lucky/Documents/practice/com.hiring.tomcat/pom.xml.
+2015-12-18 08:44:10,496 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-18 08:44:10,497 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-18 08:44:10,500 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-18 08:44:10,501 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-19 20:59:25,501 [Worker-475] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for com.hiring.tomcat
+2015-12-19 20:59:28,628 [Worker-475] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-19 20:59:28,719 [Worker-475] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-19 20:59:28,758 [Worker-475] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-19 20:59:28,758 [Worker-475] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-19 20:59:28,759 [Worker-475] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of com.hiring.tomcat
+2015-12-19 20:59:28,797 [Worker-475] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for com.hiring.tomcat
+2015-12-19 20:59:29,901 [Worker-475] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-19 23:20:39,746 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-19 23:20:39,780 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-19 23:20:39,783 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-19 23:20:39,783 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-24 08:48:50,089 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-24 08:48:50,108 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-24 08:48:50,111 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-24 08:48:50,111 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-24 15:35:42,280 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-24 15:35:42,314 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-24 15:35:42,321 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-24 15:35:42,322 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-26 16:25:12,350 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-26 16:25:12,369 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-26 16:25:12,371 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-26 16:25:12,372 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-27 14:49:31,008 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-27 14:49:31,040 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-27 14:49:31,044 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-27 14:49:31,044 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2015-12-31 15:41:59,832 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-31 15:41:59,856 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2015-12-31 15:41:59,860 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-31 15:41:59,860 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2016-01-01 19:15:57,623 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-01 19:15:57,675 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2016-01-01 19:15:57,678 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-01 19:15:57,679 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2016-01-10 17:38:30,270 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-10 17:38:30,295 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2016-01-10 17:38:30,298 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-10 17:38:30,298 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2016-01-11 22:47:47,626 [Worker-154] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-01-11 22:48:01,393 [Worker-156] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-01-11 22:48:03,824 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hiring.tomcat:com.hiring.tomcat:0.0.1-SNAPSHOT @ /home/lucky/Documents/practice/com.hiring.tomcat/pom.xml.
+2016-01-11 22:48:05,149 [Worker-156] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-01-11 22:48:05,395 [Worker-156] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-11 22:48:05,395 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2016-01-11 22:48:05,400 [Worker-156] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-11 22:48:05,400 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2016-01-11 22:48:09,575 [Worker-153] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-01-11 22:48:09,588 [Worker-153] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-11 22:48:09,589 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/main/resources
+2016-01-11 22:48:09,591 [Worker-153] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-11 22:48:09,591 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lucky/Documents/practice/com.hiring.tomcat/src/test/resources
+2016-01-11 22:55:33,610 [Worker-158] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled

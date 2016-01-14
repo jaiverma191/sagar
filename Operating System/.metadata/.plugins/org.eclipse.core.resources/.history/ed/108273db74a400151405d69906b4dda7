@@ -1,0 +1,34 @@
+package com.hiring.tree;
+
+public class Question7 {
+
+	public static void main(String[] args) {
+
+		AdvancedTreeNode root = createTree();
+
+		AdvancedTreeNode traversalPointer = root;
+
+		while (traversalPointer != null) {
+			AdvancedTreeNode temp = traversalPointer;
+		}
+	}
+
+	private static AdvancedTreeNode getNextRight(AdvancedTreeNode root) {
+		return null;
+	}
+
+	private static AdvancedTreeNode createTree() {
+		AdvancedTreeNode root = new AdvancedTreeNode(1);
+		root.left = new AdvancedTreeNode(2);
+		root.left.left = new AdvancedTreeNode(4);
+		root.left.left.left = new AdvancedTreeNode(7);
+		root.left.left.right = new AdvancedTreeNode(8);
+		root.left.right = new AdvancedTreeNode(5);
+		root.right = new AdvancedTreeNode(3);
+		root.right.right = new AdvancedTreeNode(6);
+		root.right.right.left = new AdvancedTreeNode(9);
+		root.right.right.right = new AdvancedTreeNode(10);
+		return root;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.hiring.custom.lock;
+
+public class Counter1 {
+
+	private MyLock lock = new MyLock();
+	private Integer count=0;
+	
+	public int increment()
+	{
+		lock.lock();
+		Integer newCount = count+1;
+		count++;
+		lock.unLock();
+		return newCount;
+	}
+}

@@ -1,0 +1,15 @@
+package com.hiring.string;
+
+public class KMP {
+	public static void main(String[] args) {
+		CharSequence string1 = "abcbaba";
+		CharSequence string2 = "abc";
+		if (containSubstring(string1, string2)) {
+
+		}
+	}
+
+	private static boolean containSubstring(CharSequence string1, CharSequence string2) {
+		return false;
+	}
+}

@@ -1,0 +1,52 @@
+package com.sagar.binary.tree;
+
+import com.hiring.tree.BTreePrinter;
+import com.hiring.tree.TreeNode;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		int arr[] = { 5, 7, 3, 4, 2, 1, 6, 9, 8, 10 };
+		TreeNode root = BinarySearchTreeUtil.createBST(arr);
+		BTreePrinter.printNode(root);
+		DoubleLinkedList list = convertBSTToDLL(root);
+		printList(list);
+	}
+
+	private static void printList(DoubleLinkedList list) {
+		DoubleLinkedList temp = list;
+		while (temp.right != list) {
+			System.out.print(temp.value + " ");
+			temp = temp.right;
+		}
+		System.out.println(temp.value);
+
+	}
+
+	private static DoubleLinkedList convertBSTToDLL(TreeNode root) {
+		if (root == null)
+			return null;
+		DoubleLinkedList leftList = convertBSTToDLL(root.left);
+		DoubleLinkedList rightList = convertBSTToDLL(root.right);
+		DoubleLinkedList node = new DoubleLinkedList(root.value);
+		node.left = node;
+		node.right = node;
+		leftList = append(leftList, node);
+		leftList = append(leftList, rightList);
+		return leftList;
+	}
+
+	private static DoubleLinkedList append(DoubleLinkedList list1, DoubleLinkedList list2) {
+		if (list1 == null)
+			return list2;
+		if (list2 == null)
+			return list1;
+		DoubleLinkedList list1End = list1.left;
+		DoubleLinkedList list2End = list2.left;
+		list1End.right = list2;
+		list2End.right = list1;
+		list2.left = list1End;
+		list1.left = list2End;
+		return list1;
+	}
+}
